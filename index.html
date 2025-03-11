@@ -1,0 +1,190 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+        <a onclick="showSection('home')">About Me</a>
+        <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('contact')">Contact</a>
+        <a onclick="showSection('projects')">Projects</a>
+        <a onclick="showSection('vacatures')">Vacatures</a> <!-- Added Vacatures link -->
+        <a onclick="showSection('personality')">My Personality</a> <!-- Added Mijn Personality link -->
+        <a onclick="showSection('faq')">FAQ</a> <!-- Added FAQ link -->
+    </nav>
+</header>
+
+<div class="container">
+    <section id="home" style="display: block;">
+        <h2>About Me</h2>
+        <button class="button cv-button" onclick="window.open('[Your CV Link]', '_blank')">View My CV</button>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p><strong>Naam:</strong> [Your Name]</p>
+                <p><strong>Opleiding:</strong> [Your Education]</p>
+                <p><strong>Klas:</strong> [Your Class]</p>
+            </div>
+            <div class="image-placeholder" style="max-width: 300px; flex-shrink: 0;">
+                <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187.jpg?w=718&h=479" alt="Your Image" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="scrollable">
+        <h2>About</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Mijn functie is</td>
+                    <td><p class="static-text">[Your Function]</p></td>
+                </tr>
+                <tr>
+                    <td>Ik heb de volgende opleidingen en trainingen gevolgd</td>
+                    <td><p class="static-text">[Your Education and Training]</p></td>
+                </tr>
+                <tr>
+                    <td>Ik heb ervaring met</td>
+                    <td><p class="static-text">[Your Experience]</p></td>
+                </tr>
+                <tr>
+                    <td>Ik ben goed in</td>
+                    <td><p class="static-text">[Your Skills]</p></td>
+                </tr>
+                <tr>
+                    <td>Leuk aan mijn werk vind ik</td>
+                    <td><p class="static-text">[What You Like About Your Work]</p></td>
+                </tr>
+                <tr>
+                    <td>Minder leuk aan mijn werk vind ik</td>
+                    <td><p class="static-text">[What You Dislike About Your Work]</p></td>
+                </tr>
+                <tr>
+                    <td>Op mijn werk ben ik verantwoordelijk voor</td>
+                    <td><p class="static-text">[Your Responsibilities]</p></td>
+                </tr>
+                <tr>
+                    <td>Het netto salaris dat maandelijks op mijn bankrekening gestort wordt, is</td>
+                    <td><p class="static-text">[Your Monthly Salary]</p></td>
+                </tr>
+                <tr>
+                    <td>De komende 1 tot 2 jaar wil ik graag bereiken dat</td>
+                    <td><p class="static-text">[Your Goals]</p></td>
+                </tr>
+                <tr>
+                    <td>Mijn hobby’s zijn</td>
+                    <td><p class="static-text">[Your Hobbies]</p></td>
+                </tr>
+                <tr>
+                    <td>Mijn werkervaring is</td>
+                    <td><p class="static-text">[Your Work Experience]</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> [Your Email]</p>
+        <p><strong>Telefoonnummer:</strong> [Your Phone Number]</p>
+        <div>
+            <button class="button twitter" onclick="window.open('https://twitter.com', '_blank')">Twitter</button>
+            <button class="button youtube" onclick="window.open('https://youtube.com', '_blank')">YouTube</button>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here you can showcase your projects. Feel free to add descriptions and links to your work.</p>
+        <ul>
+            <li><strong>Project 1:</strong> [Description of Project 1]</li>
+            <li><strong>Project 2:</strong> [Description of Project 2]</li>
+            <li><strong>Project 3:</strong> [Description of Project 3]</li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </section>
+
+    <section id="vacatures">
+        <h2>Vacatures</h2>
+        <p>Bekijk de onderstaande vacatures:</p>
+        <div>
+            <button class="button vacature-button" onclick="window.open('https://www.randstad.nl/functies/ict-support-medewerker', '_blank')">Vacature 1</button>
+            <button class="button vacature-button" onclick="window.open('https://www.randstad.nl/functies/ict-support-medewerker', '_blank')">Vacature 2</button>
+            <button class="button vacature-button" onclick="window.open('https://www.randstad.nl/functies/ict-support-medewerker', '_blank')">Vacature 3</button>
+        </div>
+    </section>
+
+    <section id="personality">
+        <h2>Mijn Personality</h2>
+        <div style="display: flex;">
+            <div style="flex: 1;">
+                <img src="[Your Image URL 1]" alt="Personality Image 1" width="100%" height="auto">
+            </div>
+            <div style="flex: 1;">
+                <img src="[Your Image URL 2]" alt="Personality Image 2" width="100%" height="auto">
+            </div>
+        </div>
+        <p>[Text describing your personality]</p>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <details>
+            <summary>Wi-8 - Maken van een extra account voor de (klein)kinderen</summary>
+            <p>Eerst zoek “Instellingen” in Windows zoekbalk, open instellingen, in instellingen zoek “Accounts”, dan klik op optie “Family”, dan kan je een account maken voor klein kinderen door “Add Someone” te klikken, dan klik je “Create one for the child” en maak je een email voor je kind, als je bent klaar dan je zou moet een extra account hebben voor een kleine kind.</p>
+        </details>
+
+        <details>
+            <summary>Wi-11 - Bijknippen van foto's</summary>
+            <p>Zoek in Windowsapplicatie “Snipping Tool”, dan klik op 3 bolletjes die zitten recht boven die programma, dan klik je “Open File” en zoek je een foto die je wilt bijknippen, als je hebt die gevonden dan moet je “Image Crop” klikken, dan opslaan die foto die hebt je bijgeknipt door “Save” te klikken recht boven in die programma.</p>
+        </details>
+
+        <details>
+            <summary>Wi-12 - Internetpagina's opslaan als PDF</summary>
+            <p>Zoek een pagina die je wilt opslaan als PDF, dan klik je CTRL + P op je toetsenbord, dan klik op optie “Destination” en verander die naar “Save as PDF”</p>
+        </details>
+
+        <details>
+            <summary>I-10 - Plannen van een openbaarvervoer-reis</summary>
+            <p><strong>Methode 1:</strong> Op Google Maps zoek je bestemming waar je naar toe wilt, dan klik je op “Directions” en voer je je startstation in. Dan krijg je allerlei informatie over die vervoermethode. <br><strong>Methode 2:</strong> Ga naar website <a href="https://www.ns.nl/reisplanner/" target="_blank">www.ns.nl/reisplanner/</a>, voer je startstation en bestemming in, dan krijg je informatie over wanneer je op het station moet zijn.</p>
+        </details>
+
+        <details>
+            <summary>E-4 - Bijhouden van inkomsten en uitgaven</summary>
+            <p>Open Excel en zet in cel A1 "Inkomsten" en in cel B1 "Uitgaven", voer je inkomsten onder kolom A in en je uitgaven onder kolom B. Ga naar de cel waar je het totaal wilt tonen (bijv. A20 voor inkomsten). Klik op "Formules" > "Autosom", en sleep over de waarden in kolom A. Herhaal dit voor kolom B om uitgaven op te tellen. Selecteer alle bedragen (CTRL + A), ga naar "Start", klik op "Algemeen" en verander naar "Valuta".</p>
+        </details>
+
+        <details>
+            <summary>Wo-1 - Aanmaken van twee kolommen</summary>
+            <p>Open je Word-document, ga naar het tabblad indeling, klik op Kolommen, kies Twee uit de lijst.</p>
+        </details>
+        
+        <p><strong>Meeste gestelde vragen</strong></p> <!-- Added text under FAQ -->
+    </section>
+</div>
+
+<footer>
+    <!-- No footer content anymore as requested -->
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+        const activeSection = document.getElementById(sectionId);
+        if (activeSection) {
+            activeSection.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Ensure html and body cover full height */
+html, body {
+    height: 100%; /* Full height of the viewport */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #800080); /* Black to Purple Gradient */
+    color: #e0e0e0; /* Light text color */
+    height: 100%; /* Full height of the body */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #1e1e1e; /* Darker header */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+    nav a {
+        margin: 0 15px;
+        color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    flex-grow: 1; /* Make sure the container takes up remaining space */
+}
+
+section {
+    display: none;
+    padding: 20px;
+    background: #1e1e1e; /* Dark background for sections */
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding slight shadow to sections */
+}
+
+footer {
+    display: none; /* Hides the footer */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #333; /* Darker border */
+    padding: 10px;
+    vertical-align: top;
+    background: #2a2a2a; /* Darker cell background */
+}
+
+.static-text {
+    width: 100%;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 4px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: #2a2a2a; /* Darker background */
+    color: #e0e0e0; /* Light text color */
+}
+
+.button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.twitter {
+    background: #1DA1F2;
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+.cv-button {
+    background: #35424a; /* Button style for CV */
+}
+
+.vacature-button {
+    background: #4CAF50; /* Button style for vacatures */
+}
+
+.image-placeholder {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    border: 1px solid #333; /* Darker border */
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Darker placeholder background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Updated FAQ section */
+details {
+    background: #2a2a2a; /* Dark background for FAQ */
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+summary {
+    color: #fff; /* White text for FAQ titles */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p {
+    color: #e0e0e0; /* Light text color */
+    padding-left: 20px;
+}
